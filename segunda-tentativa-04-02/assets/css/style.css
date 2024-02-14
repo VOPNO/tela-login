@@ -1,0 +1,27 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-content {
+    width: 30rem;
+    height: 40rem;
+    background: red;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
