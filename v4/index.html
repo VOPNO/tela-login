@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="h-screen flex justify-center mt-32 bg-tercery overflow-hidden">
+    <div class="cont-all  rounded-lg  w-2/3 h-3/6 grid grid-cols-2 bg-white shadow-xl">
+        <div class="tampa z-40 absolute  p-1 h-3/6 rounded-lg  bg-primary overflow-hidden pointer-events-none">
+            <div class="incresva-se">
+                <h1 class="tittle">Inscreva-se</h1>
+                <p class="text-white text-center mt-4 p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ut natus dolorem itaque possimus, veritatis nostrum iure impedit laudantium veniam odit ullam sed, eveniet adipisci exercitationem cupiditate incidunt ducimus unde.</p>
+            </div>
+            <div class="login hidden">
+                <h1 class="tittle">Login</h1>
+                <p class="text-white text-center mt-4 p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed sequi ipsum recusandae animi maxime alias aut sint, quae illum fugit omnis doloribus unde? Aut praesentium vitae, culpa sunt exercitationem sequi!</p>
+            </div>
+        </div>
+        <form class="loginForm px-10 form">
+            <div class=" border-black mt-16">
+                <label for="user"><i class="fa-solid fa-user"></i></label>
+                <input type="text" id="user" placeholder="Nome de usuario" class="input " required>
+            </div>
+            <div>
+                <label for="senha"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="senha" placeholder="Senha" class="input " required>
+            </div>
+            <div>
+                <button type="submit" class="btn loginBtn">Logar</button>
+                <p class="login">Não tem conta? Inscreva-se</p>
+            </div>
+        </form>
+
+        <form class="singForm px-10 form">
+            <div class="mt-16">
+                <label for="usuario"><i class="fa-solid fa-user"></i></label>
+                <input type="text" id="usuario" placeholder="Nome de Usuário" class="input" required>
+            </div>
+            <div>
+                <label for="email"><i class="fa-solid fa-circle-user"></i></label>
+                <input type="email" id="email" placeholder="Email" class="input" required></input>
+            </div>
+            <div>
+                <label for="password"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="password" placeholder="Senha" class="input" required>
+            </div>
+            <div>
+                <button type="submit" class="btn singBtn">Inscrever</button>
+                <p class="sing">Já tem conta? Fazer login</p>
+            </div>
+        </form>
+    </div>
+
+    <audio src="assets/sounds/notification.mp3" id="notificationSound">Sla oq</audio>
+    <script src="https://kit.fontawesome.com/3c58de483e.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/iteratividade.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

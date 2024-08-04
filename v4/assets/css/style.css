@@ -1,0 +1,70 @@
+.tampa {
+    width: 455px;
+    margin-left: 0;
+    transition:  margin-left 2s ; 
+}
+
+.incresva-se, .login{
+    transition: opacity 2s ease, visibility 2s ease;
+  }
+
+.incresva-se.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+.error::after {
+  content: '*';
+  color: red;
+}
+
+.notification {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 0.5rem;
+  left: 500px;
+  animation: mudarLado 2s ease forwards;
+}
+
+.notification i {
+  font-size: 2rem;
+  color: #49111C;
+}
+
+.notification p {
+  font-size: 0.9rem;
+  color: #A9927D;
+}
+
+.notification h2 {
+  font-size: 1.2rem;
+  color: #49111C;
+}
+
+@keyframes mudarLado {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: 70%;
+    }
+}
+
+.apagar {
+  position: absolute;
+  left: 260px;
+  top: 10px;
+  cursor: pointer;
+}

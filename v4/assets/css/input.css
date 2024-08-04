@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply  bg-primary px-2 py-1 text-white hover:bg-hoverButton active:bg-activeButton rounded-sm hover:underline;
+}
+
+.input {
+    @apply w-10/12 focus:outline-none focus:border-transparent placeholder:text-tercery text-tercery;
+}
+
+.form div:not(:last-child) {
+    @apply  border-2 rounded-md w-8/12 bg-white border-primary hover:cursor-text;
+}
+
+.form div:not(:first-child){
+    @apply mt-2;
+}
+.form div i {
+    @apply px-1 text-primary;
+}
+
+.form div:last-child {
+    @apply absolute top-96 p-0 flex gap-10;
+}
+
+.form div:last-child p {
+    @apply text-primary hover:underline hover:cursor-pointer;
+}
+
+.tittle {
+    @apply text-white text-xl text-center mt-1;
+}
+
+.notification {
+    @apply shadow-lg;
+}
+
+.notification i:not(:first-of-type){
+    @apply  hover:text-hoverButton active:text-activeButton;
+}
