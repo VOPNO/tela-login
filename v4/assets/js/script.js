@@ -60,12 +60,16 @@ function checkAccount(){
 
     let contaEncontrada = false;
 
-    for(let i of contas){
-        if($('#user').value === i.name && $('#senha').value === i.senha){
-            notification('Acesso permitido', 'Bem vindo novamente!');
-            contaEncontrada = true;
-            break
-        } 
+    if(contas){
+        for(let i of contas){
+            if($('#user').value === i.name && $('#senha').value === i.senha){
+                notification('Acesso permitido', 'Bem vindo novamente!');
+                contaEncontrada = true;
+                break
+            } 
+        }
+    } else {
+        notification('Erro', 'Não existe conta nenhuma dentro do nosso banco de dados.')
     }
 
     if(!contaEncontrada){
